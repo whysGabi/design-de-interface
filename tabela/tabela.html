@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
         table {
@@ -7,38 +8,59 @@
             width: 100%;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid #000;
             padding: 8px;
             text-align: left;
         }
 
         tr:hover {
-            background-color: #ffffff !important;
-            color: #FF4500;
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
+            background-color: #ce4b4b !important;
+            color: #ffffff;
 
+        }
+        th:hover {
+            background-color: #ce4b4b !important;
+            color: #ffffff;
+        }
         tr:nth-child(even) {
-            background-color: #8b9dc3;
+            background-color: #e6e6e6;
         }
 
         tr:nth-child(odd) {
-            background-color: #dfe3ee;
+            background-color: #ffffff;
+        }
+
+        .valor {
+            text-align: center;
+        }
+
+        th {
+            text-align: center;
+            color: #ce4b4b;
+        }
+        header{
+            text-align: center;
+            font-size: 3rem;
+            color: #ce4b4b;
+            margin: 2rem;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         }
     </style>
 </head>
+
 <body>
+    <header> Tabela com os melhores filmes clássicos! </header>
     <table>
         <thead>
             <tr>
-                <th>Título</th>
-                <th>Diretor</th>
-                <th>Ator Principal</th>
-                <th>Ano de Lançamento</th>
-                <th>Classificação Etária</th>
-                <th>Estrelas</th>
+                <th>TÍTULO</th>
+                <th>DIRETOR</th>
+                <th>ATOR PRINCIAL</th>
+                <th>ANO DE LANÇAMENTO</th>
+                <th>CLASSIFICAÇÃO ETÁRIA</th>
+                <th>ESTRELAS</th>
             </tr>
         </thead>
         <tbody>
@@ -46,24 +68,76 @@
                 <td>Edward Mãos de Tesoura</td>
                 <td>Tim Burton</td>
                 <td>Johnny Depp</td>
-                <td></td>
-                <td>Livre</td>
-                <td>4.5</td>
+                <td class="valor">1991</td>
+                <td class="valor">Livre</td>
+                <td class="valor">4.5</td>
             </tr>
             <tr>
                 <td>E.T.</td>
                 <td>Steven Spielberg</td>
                 <td>Henry Thomas</td>
-                <td></td>
+                <td class="valor">1982</td>
+                <td class="valor">Livre</td>
+                <td class="valor">4.5</td>
             </tr>
             <tr>
-                <td>Row 3, Cell 1</td>
-                <td>Row 3, Cell 2</td>
-                <td>Row 3, Cell 3</td>
+                <td>Cidadão Kane</td>
+                <td>Orson Welles</td>
+                <td>Orson Welles</td>
+                <td class="valor">1941</td>
+                <td class="valor">12 anos</td>
+                <td class="valor">4.5</td>
+            </tr>
+            <tr>
+                <td>Casablanca</td>
+                <td>Michael Curtiz</td>
+                <td>Humphrey Bogart</td>
+                <td class="valor">1942</td>
+                <td class="valor">12 anos</td>
+                <td class="valor">4.5</td>
+            </tr>
+            <tr>
+                <td>E o Vento Levou</td>
+                <td>Victor Fleming</td>
+                <td>Vivien Leigh</td>
+                <td class="valor">1939</td>
+                <td class="valor">14 anos</td>
+                <td class="valor">4.5</td>
+            </tr>
+            <tr>
+                <td>O Poderoso Chefão</td>
+                <td>Francis Ford Coppola</td>
+                <td>Marlon Brando</td>
+                <td class="valor">1972</td>
+                <td class="valor">16 anos</td>
+                <td class="valor">4.5</td>
+            </tr>
+            <tr>
+                <td>O Mágico de Oz</td>
+                <td>Victor Fleming</td>
+                <td>Judy Garland</td>
+                <td class="valor">1939</td>
+                <td class="valor">Livre</td>
+                <td class="valor">4.0</td>
+            </tr>
+            <tr>
+                <td>12 Homens e uma Sentença</td>
+                <td>Sidney Lumet</td>
+                <td>Henry Fonda</td>
+                <td class="valor">1957</td>
+                <td class="valor">12 anos</td>
+                <td class="valor">4.5</td>
+            </tr>
+            <tr>
+                <td>O Terceiro Homem</td>
+                <td>Carol Reed</td>
+                <td>Orson Welles</td>
+                <td class="valor">1949</td>
+                <td class="valor">12 anos</td>
+                <td class="valor">4.0</td>
             </tr>
         </tbody>
     </table>
 </body>
+
 </html>
-
-
